@@ -1,6 +1,6 @@
 from vector import Particle
 from system import System
-from trajectory_data import *
+from system_data import *
 import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib.animation import FuncAnimation

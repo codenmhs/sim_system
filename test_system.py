@@ -1,6 +1,6 @@
 from system import System
 from vector import Vector, Particle
-from trajectory_data import *
+from system_data import *
 import unittest
 
 
