@@ -65,8 +65,7 @@ class Particle(Vector):
         # given by the product of their masses and the gravitational constant, divided by the distance squared.
         # Ie, implement F_G1,2 = (G * m1 * m2 / d ** 2) * uv_1,2
         denom = self.difference(other).get_length() ** 2
-        zero_rad = 100
-        if -1 * zero_rad < denom < zero_rad:
+        if denom == 0.0:
             # If the positions are identical, avoid a divide by 0 and assign 0 mutual force.
             force_on_self = Vector([0] * len(self.position))
         else:
